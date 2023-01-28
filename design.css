@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 180vh;
+    min-height: 100vh;
 }
 
 ul {
@@ -30,7 +30,8 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     transition: 0.5s;
 }
 
@@ -70,19 +71,22 @@ ul li::after {
 
 ul li:hover::after {
     opacity: 0.5;
+    background: #fff;
 }
 
 ul li i {
-    color: #777;
+    color: rgb(255, 255, 255);
     font-size: 1.75em !important;
     transition: 0.5s;
     transition-delay: 0.25s;
+     
 }
 
 ul li:hover i {
     transform: scale(0);
     font-size: 1.75em;
     transition-delay: 0.25s;
+    
 }
 
 ul li span {
@@ -96,6 +100,7 @@ ul li .titulo {
     letter-spacing: 0.1em;
     transform: scale(0);
     transition: 0.5s;
+
     transition-delay: 0s;
 }
 
@@ -105,16 +110,12 @@ ul li:hover .titulo {
     transition-delay: 0.25s;
 }
 
-body {
-    background-image:url('vn-bg.png');
-    background-size:100%;
-    background-attachment: fixed;
-    height:100%;
-    background-position: center; 
-    -webkit-background-size: cover;
-    background-size: cover;
-    width:100%;
-}
- 
- 
-     
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    backface-visibility: inherit;
+    min-height:100vh;
+    background:linear-gradient(315deg, #e62ede, #1653c9);
+  }
+  

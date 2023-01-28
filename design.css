@@ -114,8 +114,15 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
+    background-size:100%;
     backface-visibility: inherit;
+    height:100%;
+    width:100%;
+    background-repeat: no-repeat !important;
     min-height:100vh;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
     background:linear-gradient(315deg, #e62ede, #1653c9);
   }
   
